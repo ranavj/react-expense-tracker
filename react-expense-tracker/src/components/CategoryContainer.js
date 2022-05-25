@@ -5,12 +5,12 @@ import { loadCategory, selectCategory } from "../fetures/category/categorySlice"
 
 export function CategoryContainer(){
     const getCategory = useSelector(selectCategory);
-    console.log(getCategory);
-    const dispatch = useDispatch();
-    const loadData = () => {
-        dispatch(loadCategory())
-    };    
-    useEffect(loadData, []);
+    // console.log(getCategory);
+    // const dispatch = useDispatch();
+    // const loadData = () => {
+    //     dispatch(loadCategory())
+    // };    
+    // useEffect(loadData, []);
     return (
         <div>
             {

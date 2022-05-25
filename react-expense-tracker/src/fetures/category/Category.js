@@ -11,7 +11,7 @@ export function Category({data}){
    
     const calculateBuget = () => {
       if(allTransactions[category]){
-        console.log(allTransactions[category].reduce((a, b) => a + b.ammount, 0))
+       // console.log(allTransactions[category].reduce((a, b) => a + b.ammount, 0))
        return parseInt(ammount) - allTransactions[category].reduce((a, b) => a + b.ammount, 0)
       }
       return parseInt(ammount)
